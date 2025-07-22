@@ -1,0 +1,18 @@
+[project]
+name = "class02"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "openai-agents>=0.1.0",
+]
+
+[project.scripts]
+class02 = "class02:main"
+main = "class02.main:start"
+get_weather = "class02.main:Get_weather"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
